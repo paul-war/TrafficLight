@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
-import RedLight from "./RedLight.jsx";
-import YellowLight from "./YellowLight.jsx";
-import GreenLight from "./GreenLight.jsx";
+import React, { useState } from "react";
+
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center traffic-light">
-			<div className="stick"></div>
-			<RedLight />
-			<YellowLight />
-			<GreenLight />
-		</div>
-	);
-};
 
-export default Home;
+export function Home() {
+
+const [clicked, setClicked] = useState("");
+
+return (
+	<div className="text-center traffic-light">
+		<div className="stick"></div>
+		<div onClick={() => setClicked("red")} className={`redLight ${clicked === "red" ? "clicked" : ""}`}></div>
+		<div onClick={() => setClicked("yellow")} className={`yellowLight ${clicked === "yellow" ? "clicked" : ""}`}></div>
+		<div onClick={() => setClicked("green")} className={`greenLight ${clicked === "green" ? "clicked" : ""}`}></div>
+	</div>
+	);
+} 
