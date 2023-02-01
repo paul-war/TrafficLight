@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import redLight from "./redLight.jsx";
-
+import RedLight from "./RedLight.jsx";
+import YellowLight from "./YellowLight.jsx";
+import GreenLight from "./GreenLight.jsx";
 
 //create your first component
 const Home = () => {
 	return (
 		<div className="text-center traffic-light">
-			<redLight />
-			<div className="yellowLight">Yellow</div>
-			<div className="greenLight">Green</div>
+			<div className="stick"></div>
+			<RedLight />
+			<YellowLight />
+			<GreenLight />
 		</div>
 	);
 };
