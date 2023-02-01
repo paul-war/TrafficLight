@@ -1,4 +1,50 @@
 
+#app{
+    display: flex;
+    justify-content: center;
+}
+
+.traffic-light{
+    width: 200px;
+    height: 580px;
+    background-color: black;
+    margin-top: 50px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.redLight{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    top: 5%;
+    left: 13%;
+}
+
+.greenLight{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: green;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+}
+
+.yellowLight{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 65%;
+    left: 13%;
+}
+
+
+
 /* 
 
     You can write your own styles here...
